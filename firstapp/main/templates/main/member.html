@@ -1,0 +1,81 @@
+{% extends 'main/base.html'%}
+{%load static  i18n %}
+{% block content %}
+
+    <section class="home-slider-loop-false  inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url('/static/img/Mind-Over-Miles-Run-Carla-Downes-running-for-lululemon-4156-Melbourne-Australia-2017-Matt-Korinek-MK-Photography-SQSP-1500px.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>{% trans 'Sign up or Login'%}</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END slider -->
+    
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-wrap overlap primary element-animate">
+              <h2 class="h2">{% trans 'Become A Member'%}</h2>
+              <form action = "" method="post">{%csrf_token%}
+                <div class="form-group">
+                  {{form.username}}
+                </div>
+                <div class="form-group">
+                  {{form.email}}
+                </div>
+                <div class="form-group ">
+                   {{form.password1}}
+                </div>
+              <div class="form-group ">
+                   {{form.password2}}
+                </div>
+
+                <div class="form-group">
+                  <input type="submit" name="register" class="btn btn-warning btn-block py-3" value="Create an account">
+                </div>
+
+
+              </form>
+            </div>
+            <br>
+            {{form.errors}}
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-wrap overlap element-animate">
+              <h2 class="h2">{% trans 'Log in'%}</h2>
+              <form action="" method="post">{%csrf_token%}
+                <div class="form-group">
+                  <input type="text" name="username" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <p>{% trans 'Forgot your password?'%} <a href="#">click here</a></p>
+                </div>
+                <div class="form-group">
+                  <input type="submit" name="log_in" class="btn btn-primary btn-block py-3" value="Log In">
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+         {%for m in messages%}
+                <p>{{m}}</p>
+                {%endfor%}
+      </div>
+    </section>
+
+   {% endblock %}
+

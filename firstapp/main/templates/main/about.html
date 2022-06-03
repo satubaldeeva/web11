@@ -1,0 +1,56 @@
+{% extends 'main/base.html'%}
+{%load static  i18n %}
+{% block content %}
+
+    
+    <section class="home-slider-loop-false  inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url('/static/img/pic2.jpg');">
+        
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>{% trans 'About Me'%}</h1>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- END slider -->
+
+    <section class="section element-animate">
+      <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center heading-wrap">
+              <h2>{% trans 'About Me'%}</h2>
+              <span class="back-text">{% trans 'About'%}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p><img src="{%static 'img/pic4.jpg'%}" alt="" class="img-fluid"></p>
+            <p class="mb-5"><img src="{%static 'img/fa1e0921b2e44f76d25d271a3adb5258.jpg'%}" alt="" class="img-fluid"></p>
+          </div>
+          
+          <div class="col-lg-6 pl-2 pl-lg-5">
+            <h2 class="mb-5">{% trans 'History'%}</h2>
+            <p>{% trans 'Pamela is a leading fitness creator on YouTube with over 22M subscribers. Her goal is to make health and fitness accessible to all by providing free workout programs and sharing free recipes with her audience.'%}</p>
+            <p> {% trans 'In 2022, Chloe launched her range of fitness equipment in over 2,300 stores across the US in Walmart. This stylish collection was developed to ensure people have access to quality fitness equipment at a reasonable price, so that they can continue challenging themselves as they progress in their fitness journey.'%}</p>
+            
+            <p class="mb-5">{% trans 'Ok that is it. Do your workouts, watch the ads and remember to engage that core!'%}</p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+   {% endblock %}
+

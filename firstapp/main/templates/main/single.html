@@ -1,0 +1,27 @@
+{% extends 'main/base.html'%}
+{%load static  i18n %}
+{% block content %}
+    <section class="home-slider-loop-false  inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url('/static/img/strawberry-protein-bliss-balls-feature.jpg');">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>{% trans 'Recipes'%}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END slider -->
+<section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div id="maindiv" class="col-md-12 mb-5">
+    
+       {% include 'main/favourite_section.html' %}
+    </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

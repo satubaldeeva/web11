@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-03 09:28+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\main\templates\main\about.html:12 .\main\templates\main\about.html:28
+msgid "About Me"
+msgstr "Обо мне"
+
+#: .\main\templates\main\about.html:29 .\main\templates\main\base.html:74
+#: .\main\templates\main\base.html:132 .\main\templates\main\base.html:155
+msgid "About"
+msgstr "Обо мне"
+
+#: .\main\templates\main\about.html:42
+msgid "History"
+msgstr "История"
+
+#: .\main\templates\main\about.html:43
+msgid ""
+"Pamela is a leading fitness creator on YouTube with over 22M subscribers. "
+"Her goal is to make health and fitness accessible to all by providing free "
+"workout programs and sharing free recipes with her audience."
+msgstr ""
+"Памела - ведущий создатель фитнес-программ на YouTube с более чем 22 "
+"миллионами подписчиков. Ее цель - сделать здоровье и фитнес доступными для "
+"всех, предоставляя бесплатные программы тренировок и делится бесплатными "
+"рецептами со своей аудиторией."
+
+#: .\main\templates\main\about.html:44
+msgid ""
+"In 2022, Chloe launched her range of fitness equipment in over 2,300 stores "
+"across the US in Walmart. This stylish collection was developed to ensure "
+"people have access to quality fitness equipment at a reasonable price, so "
+"that they can continue challenging themselves as they progress in their "
+"fitness journey."
+msgstr ""
+"В 2022 году Хлоя запустила свой ассортимент фитнес-оборудования в более чем "
+"2 300 магазинах  по всей территории США в Walmart. Эта стильная коллекция "
+"была разработана для того, чтобы чтобы люди имели доступ к качественному "
+"фитнес-оборудованию по разумной цене, чтобы  чтобы они могли продолжать "
+"бросать себе вызов по мере продвижения в своем фитнес-путешествии."
+
+#: .\main\templates\main\about.html:46
+msgid ""
+"Ok that is it. Do your workouts, watch the ads and remember to engage that "
+"core!"
+msgstr ""
+"Вот и все. Делайте свои тренировки, смотрите рекламу и не забывайте "
+"задействовать пресс!"
+
+#: .\main\templates\main\base.html:63
+msgid "Pamela Reif"
+msgstr "Pamela Reif"
+
+#: .\main\templates\main\base.html:71
+msgid "Home"
+msgstr "Главная"
+
+#: .\main\templates\main\base.html:78 .\main\templates\main\index.html:87
+#: .\main\templates\main\index.html:88 .\main\templates\main\recipes.html:11
+#: .\main\templates\main\recipes.html:28 .\main\templates\main\recipes.html:29
+#: .\main\templates\main\single.html:9
+msgid "Recipes"
+msgstr "Рецепты"
+
+#: .\main\templates\main\base.html:81 .\main\templates\main\base.html:158
+#: .\main\templates\main\contact.html:12 .\main\templates\main\contact.html:27
+msgid "Contact"
+msgstr "Контакты"
+
+#: .\main\templates\main\base.html:112
+msgid "Logout"
+msgstr "Выйти"
+
+#: .\main\templates\main\base.html:118
+msgid "Become a member"
+msgstr "Стать участником"
+
+#: .\main\templates\main\base.html:143
+msgid "Contact Info"
+msgstr "Контактная информация"
+
+#: .\main\templates\main\base.html:146
+msgid "Address:"
+msgstr "Адрес:"
+
+#: .\main\templates\main\base.html:148
+msgid "Telephone:"
+msgstr "Телефон:"
+
+#: .\main\templates\main\base.html:149
+msgid "Email:"
+msgstr "Email:"
+
+#: .\main\templates\main\base.html:153
+msgid "Quick Links"
+msgstr "Быстрые ссылки"
+
+#: .\main\templates\main\base.html:156
+msgid "Terms of Use"
+msgstr "Условия использования"
+
+#: .\main\templates\main\base.html:157
+msgid "Disclaimers"
+msgstr "Отказ от ответственности"
+
+#: .\main\templates\main\contact.html:26
+msgid "Get In Touch"
+msgstr "Свяжитесь с нами"
+
+#: .\main\templates\main\contact.html:42
+msgid "Name"
+msgstr "Имя"
+
+#: .\main\templates\main\contact.html:47
+msgid "Phone"
+msgstr "Телефон"
+
+#: .\main\templates\main\contact.html:59
+msgid "Email"
+msgstr "Email"
+
+#: .\main\templates\main\contact.html:66
+msgid "Write Message"
+msgstr "Написать сообщение"
+
+#: .\main\templates\main\contact.html:86
+msgid "Contact Details"
+msgstr "Контакты"
+
+#: .\main\templates\main\favourite_section.html:14
+msgid "Remove from favourites"
+msgstr "Удалить из избранного"
+
+#: .\main\templates\main\favourite_section.html:16
+msgid "Add to favourite"
+msgstr "Добавить в избранное"
+
+#: .\main\templates\main\index.html:10
+msgid "Health is wealth"
+msgstr "Здоровье - это богатство"
+
+#: .\main\templates\main\index.html:11
+msgid "Your path of comprehensive self-care"
+msgstr "Твой путь комплексной заботы о себе"
+
+#: .\main\templates\main\index.html:12 .\main\templates\main\index.html:25
+msgid "Get Started"
+msgstr "Начать"
+
+#: .\main\templates\main\index.html:12 .\main\templates\main\index.html:25
+msgid "Download"
+msgstr "Скачать"
+
+#: .\main\templates\main\index.html:23
+msgid "Join Today"
+msgstr "Присоединяйся сегодня"
+
+#: .\main\templates\main\index.html:24
+msgid ""
+"Get your best score in just one month and win a prize. This mission is "
+"achievable. Get started now."
+msgstr ""
+"Наберите свой лучший результат всего за один месяц и выиграйте приз. Это "
+"задание достижима. Начните прямо сейчас"
+
+#: .\main\templates\main\index.html:42
+msgid "Choose your course"
+msgstr "Выбери свой курс"
+
+#: .\main\templates\main\index.html:43
+msgid "The Classes"
+msgstr "Занятия"
+
+#: .\main\templates\main\index.html:53
+msgid "Basic"
+msgstr "Базовый"
+
+#: .\main\templates\main\index.html:60
+msgid "No axial load"
+msgstr "Без осевой нагрузки"
+
+#: .\main\templates\main\index.html:67
+msgid "Lower body workouts"
+msgstr "Тренировки на низ"
+
+#: .\main\templates\main\index.html:74
+msgid "Training for sore knees"
+msgstr "При больных коленях"
+
+#: .\main\templates\main\index.html:109 .\main\templates\main\recipes.html:50
+msgid "Read More"
+msgstr "Полностью"
+
+#: .\main\templates\main\member.html:11
+msgid "Sign up or Login"
+msgstr "Зарегистрироваться или войти"
+
+#: .\main\templates\main\member.html:26
+msgid "Become A Member"
+msgstr "Стать участником"
+
+#: .\main\templates\main\member.html:55
+msgid "Log in"
+msgstr "Войти"
+
+#: .\main\templates\main\member.html:64
+msgid "Forgot your password?"
+msgstr "Забыли пароль?"
+
+#~ msgid "Lang"
+#~ msgstr "Язык"
+
+#~ msgid ""
+#~ "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde "
+#~ "impedit, necessitatibus, soluta sit quam minima expedita atque corrupti "
+#~ "reiciendis."
+#~ msgstr ""
+#~ "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde "
+#~ "impedit, necessitatibus, soluta sit quam minima expedita atque corrupti "
+#~ "reiciendis."
+
+#~ msgid "Featured Classes"
+#~ msgstr "Популярные занятия"
+
+#~ msgid "Our Blog"
+#~ msgstr "Наш блог"

@@ -1,0 +1,38 @@
+
+            <p class="mb-5"><img src="{{post.image1.url}}" alt="" height="1808" width="1356" class="img-fluid"></p>
+{%load i18n %}
+            <div class="row justify-content-center">
+
+              <div class="col-md-7 mb-5">
+                <h2 class="mb-5">{{post.title}}</h2>
+                <p> {{post.created}}</p>
+                {%if request.user.is_authenticated %}
+                <div id="favourite-section">
+                     {%csrf_token%}
+                    <input id="idpost" type="hidden" value="{{post.id}}">
+                    {%if is_favourite  %}
+                        <a id="fav" href="{%url 'main:favourite_post'%}">{%trans 'Remove from favourites'%} <i class="fa-solid fa-bookmark fa-2xl"></i></a>
+                    {%else%}
+                         <a id="fav" href="{%url 'main:favourite_post'%}">{% trans 'Add to favourite'%} <i class="fa-regular fa-bookmark fa-2xl"></i></a>
+                    {%endif%}
+
+
+                </div>
+                {%endif%}
+                <br>
+                <blockquote class="float-left quote-content">
+                  <span class="quote">&ldquo;</span> </blockquote>
+                  <p class="text">{{post.ingredients|linebreaksbr}}</p>
+
+              </div>
+            </div>
+            <p class="mb-5"><img src="{{post.image2.url}}" alt="" height="1808" width="1356" class="img-fluid"></p>
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <blockquote class="float-right quote-content">
+                  <span class="quote">&ldquo;</span>
+                     </blockquote>
+                  <p class="text"> {{post.recipe}}</p>
+
+              </div>
+            </div>
