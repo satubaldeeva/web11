@@ -29,23 +29,27 @@ SECRET_KEY = "foo"
 
 DEBUG = 1
 
-ALLOWED_HOSTS = ['.localhost', '127.0.0.1', '[::1]']
-
-
+ALLOWED_HOSTS = []
 DATABASES = {
     'default': {
-        'ENGINE': env("SQL_ENGINE", default="0"'django.db.backends.sqlite3'),
-        "NAME": env("SQL_DATABASE", default= os.path.join(BASE_DIR, "db.sqlite3")),
-        "USER": env("SQL_USER", default="user"),
-        "PASSWORD": env("SQL_PASSWORD", default="password"),
-        "HOST": env("SQL_HOST", default="localhost"),
-        "PORT": env("SQL_PORT", default="5432"),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': env("SQL_ENGINE", default="0"'django.db.backends.sqlite3'),
+   #     "NAME": env("SQL_DATABASE", default= os.path.join(BASE_DIR, "db.sqlite3")),
+    #    "USER": env("SQL_USER", default="user"),
+     #   "PASSWORD": env("SQL_PASSWORD", default="password"),
+      #  "HOST": env("SQL_HOST", default="localhost"),
+   #     "PORT": env("SQL_PORT", default="5432"),
+   # }
+#}
 
-STATIC_ROOT = "/var/www/example.com/static/"
-STATICFILES_DIRS = BASE_DIR / "main/static",
+
+
 INSTALLED_APPS = [
     'modeltranslation',
     'django.contrib.admin',
@@ -148,9 +152,10 @@ MODELTRANSLATION_PREPOPULATE_LANGUAGE = 'en'
 
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = "/var/www/example.com/static/"
+STATICFILES_DIRS = BASE_DIR / "main/static",
 MEDIA_URL = '/media/'
-MEDIA_ROOT = "/var/www/example.com/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR,'main/media')
 MEDIAFILES_DIRS = BASE_DIR / "main/media",
 
 # Default primary key field type

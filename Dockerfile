@@ -18,10 +18,10 @@ COPY ./firstapp/requirements.txt .
 RUN pip install -r requirements.txt
 
 # copy entrypoint.sh
-COPY ./firstapp/entrypoint.sh .
+#COPY ./firstapp/entrypoint.sh .
 
 # copy project
 COPY ./firstapp .
 
 # run entrypoint.sh
-ENTRYPOINT ["./firstapp/entrypoint.sh"]
+#ENTRYPOINT ["./firstapp/entrypoint.sh"]
